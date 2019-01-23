@@ -5,10 +5,7 @@ import java.util.Map;
 
 import javax.validation.Valid;
 
-import com.factura.luis.factura.models.entity.Cliente;
-import com.factura.luis.factura.models.entity.Factura;
-import com.factura.luis.factura.models.entity.ItemFactura;
-import com.factura.luis.factura.models.entity.Producto;
+import com.factura.luis.factura.models.entity.*;
 import com.factura.luis.factura.models.service.IClienteService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -65,7 +62,6 @@ public class FacturaController {
 
 		Factura factura = new Factura();
 		factura.setCliente(cliente);
-
 		model.put("factura", factura);
 		model.put("titulo", "Crear Factura");
 
